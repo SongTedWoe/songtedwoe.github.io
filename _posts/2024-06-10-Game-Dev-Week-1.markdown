@@ -8,8 +8,8 @@ description: "Lets start the week"
 
 # What am I going to do this week?
 
-My thoughts for now is, that I will make an iteration of Platformers over the next 3 weeks. Starting this week with a puzzle platformer where jumping is not allowed.  
-In my time in Ireland I created a puzzle platformer featuring a small slime who had the ability to devour blocks and spit them out again. with that ability you traverse the level and collect things on the way, dodge enemies and find your way home.
+My thoughts for now are, that I will make a Platformer over the next 3 weeks iterating over different ideas. Starting this week with a puzzle platformer where jumping is not allowed.  
+In my time in Ireland I created a puzzle platformer featuring a small slime who had the ability to devour blocks and spit them out again. With that ability you traverse the level and collect things on the way, dodge enemies and find your way home.
 
 I will try to recreate that game in this week and make a redesign of it.
 
