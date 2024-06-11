@@ -1,0 +1,70 @@
+.projects-container {
+    @include consistent-padding;
+    padding-left:calc(10% - 10px);
+    padding-right:calc(10% - 10px);
+    display:flex;
+    flex-direction: column;
+    position:relative;
+    min-height: 100%;
+    max-height: 100vh;
+
+    overflow: hidden;
+
+    h1 {
+        height: 5rem;
+        padding-left: 10px;
+    }
+
+    ul {
+        padding-left:10px;
+        padding-right:10px;
+    }
+}
+
+.projects-scroll-list {
+    align-items:stretch;
+    position:relative;
+    //min-height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    height: 10000px;
+    width: 100vw;
+    //border:1px solid $color-subtext;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    scrollbar-color: $color-background;
+
+    a{
+        color: $color-text;
+        border: none;
+    }
+}
+
+.projects-scroll-list ul{
+    list-style: none;
+}
+
+.projects-scroll-list li{
+    border-top: 5px solid $color-background;
+    border-bottom: 5px solid $color-background;
+    padding: 1rem;
+    background: linear-gradient(90deg, $color-background-projects-list, $color-background);
+    //background-color: $color-background-projects-list;
+
+    &:focus, 
+    &:hover {
+        background:$color-background-projects-list;
+        transform:scale(1.01);
+    }
+}
+
+.projects-scroll-list p{
+    height: 1.5em;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+

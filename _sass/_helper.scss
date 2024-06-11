@@ -1,0 +1,34 @@
+.text-center {
+    text-align: center !important;
+}
+.text-start {
+    text-align: start !important;
+}
+.text-end {
+    text-align:end !important;
+}
+.text-left {
+    text-align: left !important;
+}
+.text-right {
+    text-align: right !important;
+}
+
+.one-screen-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: $color-background;
+}
+
+.background-img {
+    opacity: 0.2;
+}
+
+.site-container {
+    position: absolute;
+
+    footer {
+        padding-left: 10%;
+    }
+}

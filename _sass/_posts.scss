@@ -1,0 +1,22 @@
+.fade-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+
+    background: linear-gradient(rgba(255, 255, 255, 0.2) 0, rgba(255, 255, 255, 0) 70%);
+    z-index: -1;
+}
+
+.post-grid-container {
+    @include consistent-padding();
+
+    max-width: 100%;
+    width: 10000px;
+    overflow: hidden;
+}
+
+article {
+    justify-content: center;
+}

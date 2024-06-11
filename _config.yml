@@ -20,6 +20,7 @@
 
 title: Songman Theodor Wöllmer
 email: songman.w@googlemail.com
+author: Songman Theodor Wöllmer
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -31,7 +32,7 @@ twitter_username: Songman Wöllmer
 github_username:  SongTedWoe
 
 # Build settings
-theme: minima
+#theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -45,7 +46,7 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
+exclude:
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
@@ -56,3 +57,4 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+  - .vscode/

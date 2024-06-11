@@ -1,0 +1,17 @@
+<div id="projects" class="fullscreen">
+    <div class="projects-container"">
+        <h1>Recent Posts</h1>
+        <div class="projects-scroll-list nowrap">
+            <ul>
+            {% for post in site.posts %}
+                <a href="{{ post.url }}">
+                    <li>
+                        <h2>{{ post.title }}</h1>
+                        <p>{{ post.description }}</p>
+                    </li>
+                </a>
+            {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

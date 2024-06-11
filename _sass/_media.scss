@@ -1,0 +1,54 @@
+@media (max-width: 540px){
+    .landing-content {
+        top:35%;
+    }
+
+    .frontpage-titel{
+        font-size: 1.5rem;
+    }
+
+    .frontpage-subtitle{
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
+    p {
+        font-size:0.75rem;
+    }
+
+    small {
+        font-size: 0.5rem;
+    }
+
+    .frontpage-icon {
+        margin: 0 0.5rem;
+    }
+    
+    .about-me-content {
+        margin: 0;
+        @include consistent-padding();
+    }
+
+    .projects-container {
+        padding-top:10%;
+        padding-left:10%;
+        padding-right:10%;
+        padding-bottom:10%;
+    }
+
+    .projects-scroll-list ul{
+        padding: 0;
+    }
+
+    .projects-scroll-list li {
+        background: $color-background-projects-list;
+    }
+
+    .post-grid-container {
+        grid-template-columns: 1fr [start] 90% [end] 1fr;
+    }
+}
