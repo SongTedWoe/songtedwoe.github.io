@@ -30,6 +30,7 @@ url: "https://songtedwoe.github.io" # the base hostname & protocol for your site
 domain: "songtedwoe.github.io"
 twitter_username: Songman Wöllmer
 github_username:  SongTedWoe
+itch_link: https://thesongman.itch.io
 
 # Build settings
 #theme: minima

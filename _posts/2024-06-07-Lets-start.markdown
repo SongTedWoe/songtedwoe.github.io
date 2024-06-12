@@ -17,4 +17,4 @@ Join me on this journey. Pop in every now and then. I intend to present somethin
 
 I will publish my projects on [itch.io][itch-link]
 
-[itch-link]: https://itch.io/profile/larokia
+[itch-link]: {{ site.itch_link }}
