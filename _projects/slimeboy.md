@@ -1,10 +1,12 @@
 ---
 name: Slime Boy
 title: Slime Boy
-date: 2024-09-16 13:00:00 +0200
+date: 2024-10-18
+release: Sep 2024
 thumbnail: "assets/images/projects/thumbnails/slimeboy.png"
 itch: "https://thesongman.itch.io/slimeboy"
+codebase: "https://github.com/SongTedWoe/SlimeBoy"
 positions: Everything
 ---
 
-My first game to work mostly alone. Follow slimeboy in his first steps and through trials in the laboratory, that created him.
+The first game I worked alone on. A Platformer without player controlled jumping. Slither your way around and up the wall and make use of different contraptions as Slime Boy, to get to the end of the trials.

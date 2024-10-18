@@ -7,12 +7,13 @@
                 <li>
                     <table>
                         <tr>
-                            <td>
-                                <img class="project-thumbnail" src="{{ project.thumbnail }}">
+                            <td width="350px">
+                                <img src="{{ project.thumbnail }}">
                                 </img> 
                             </td>
                             <td>
-                                <h2>{{ project.title }}</h2>
+                                <h2>{{ project.title }} </h2> 
+                                <p class="subtext">{{ project.release }}</p>
                                 <p>{{ project.content }}</p>
                                 <p>
                                     {% if project.itch %}
@@ -21,17 +22,16 @@
                                     {% if project.steam %}
                                         <a href="{{ project.steam }}">Steam</a>
                                     {% endif %}
+                                    {% if project.codebase %}
+                                        <a href="{{ project.codebase }}">Codebase</a>
+                                    {% endif %}
                                 </p>
                             </td>
                         </tr>
-                        {% if project.positions %}
-                        <tr>
-                            <td>
-                                <p>Positions: {{ project.positions }}</p>
-                            </td>
-                        </tr>
-                        {% endif %}
                     </table>
+                    {% if project.positions %}
+                    <p>Positions: {{ project.positions }}</p>
+                    {% endif %}
                 </li>
             {% endfor %}
             </ul>
