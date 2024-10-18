@@ -1,15 +1,38 @@
 <div id="projects" class="fullscreen">
     <div class="projects-container"">
-        <h1>Recent Posts</h1>
-        <div class="projects-scroll-list nowrap">
+        <h1>Projects I have worked on</h1>
+        <div class="projects-scroll-list">
             <ul>
-            {% for post in site.posts %}
-                <a href="{{ post.url }}">
-                    <li>
-                        <h2>{{ post.title }}</h1>
-                        <p>{{ post.description }}</p>
-                    </li>
-                </a>
+            {% for project in site.projects %}
+                <li>
+                    <table>
+                        <tr>
+                            <td>
+                                <img class="project-thumbnail" src="{{ project.thumbnail }}">
+                                </img> 
+                            </td>
+                            <td>
+                                <h2>{{ project.title }}</h2>
+                                <p>{{ project.content }}</p>
+                                <p>
+                                    {% if project.itch %}
+                                        <a href="{{ project.itch }}">Itch.io</a>
+                                    {% endif %}
+                                    {% if project.steam %}
+                                        <a href="{{ project.steam }}">Steam</a>
+                                    {% endif %}
+                                </p>
+                            </td>
+                        </tr>
+                        {% if project.positions %}
+                        <tr>
+                            <td>
+                                <p>Positions: {{ project.positions }}</p>
+                            </td>
+                        </tr>
+                        {% endif %}
+                    </table>
+                </li>
             {% endfor %}
             </ul>
         </div>

@@ -31,9 +31,6 @@
     width: 100vw;
     //border:1px solid $color-subtext;
 
-    overflow-y: auto;
-    overflow-x: hidden;
-
     scrollbar-color: $color-background;
 
     a{
@@ -63,8 +60,4 @@
 .projects-scroll-list p{
     height: 1.5em;
     max-width: 100%;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
 }
-
