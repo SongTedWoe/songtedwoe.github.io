@@ -4,7 +4,7 @@ name: Slime Boy
 title: Slime Boy
 date: 2024-10-18
 release: Sep 2024
-thumbnail: "assets/images/projects/thumbnails/slimeboy.png"
+thumbnail: "assets/images/projects/slimeboy/thumbnail/slimeboy.png"
 itch: "https://thesongman.itch.io/slimeboy"
 codebase: "https://github.com/SongTedWoe/SlimeBoy"
 positions: Everything
