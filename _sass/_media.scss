@@ -51,4 +51,27 @@
     .post-grid-container {
         grid-template-columns: 1fr [start] 90% [end] 1fr;
     }
+
+    .po-container {
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-areas: 
+        "title" 
+        "image"
+        "links"
+        "positions" 
+        "content" 
+        "footer";
+        
+        overflow-x: visible;
+        
+
+        h1{
+            font-size: 1em;
+            line-height: 1em;
+            text-align: center;
+            grid-area: title;
+            text-wrap: wrap;
+        }
+    }
 }

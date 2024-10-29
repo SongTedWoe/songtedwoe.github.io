@@ -61,4 +61,5 @@ exclude:
   - .vscode/
 
 collections:
-  - projects
+  projects:
+    output: true

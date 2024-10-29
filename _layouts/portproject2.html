@@ -1,0 +1,47 @@
+---
+---
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+    <!-- {% include header.html %} -->
+    <div class="fade-overlay"></div>
+    <div class="po-container">
+        <div class="po-title">
+            <h1> {{ page.title }}</h1>
+        </div>
+        <div class="po-positions">
+            <h3>Responsibilities</h3>
+            <p>{{  page.positions  }}</p>
+        </div>
+        <div class="po-image">
+            <img src="../{{ page.thumbnail }}"></img>
+        </div>
+        <div class="po-links">
+            <h3> Relevant Links</h3>
+            {% if page.itch %}
+            <a href="{{  page.itch }}">Itch</a>
+            {% endif %}
+            {% if page.codebase %}
+            <p></p><a href="{{  page.codebase }}">To Code</a>
+            {% endif %}
+        </div>
+        <article class="po-content">
+            <div>
+                {{ content }}
+            </div>
+            {% if page.screenshots %}
+                <div class="po-screenshots">
+                    {% for shot in page.screenshots %}
+                        <img src="../{{ shot }}"></img>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </article>
+        <div class="po-footer">
+            {% include footer.html %}
+        </div>
+    </div>
+    
+</body>
+</html>

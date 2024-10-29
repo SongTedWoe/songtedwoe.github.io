@@ -1,0 +1,66 @@
+.po-container {
+    @include consistent-padding;
+    padding-left:calc(10% - 10px);
+    padding-right:calc(10% - 10px);
+    min-height: 100%;
+
+    display: grid;
+
+    grid-row-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "title title title" 
+    "positions image links" 
+    "content content content" 
+    "footer footer footer";
+
+    align-items: center;
+    text-align: center;
+    text-wrap:pretty;
+}
+
+.po-title {
+    font-size: 2em;
+    height:2em;
+    text-align: center;
+    grid-area: title;
+}
+
+.po-image{
+    grid-area: image;
+    object-fit: contain;
+}
+
+.po-positions{
+    grid-area: positions;
+}
+
+.po-links{
+    grid-area: links;
+}
+
+.po-content{
+    grid-area: content;
+    text-align: justify;
+}
+
+.po-screenshots{
+    grid-area: screenshots;
+}
+
+.po-footer{
+    grid-area: footer;
+    text-align: justify;
+}
+
+.po-screenshots{
+    padding: 7% 7% 0 7%;
+    display: flex;
+    flex-flow:column;
+    row-gap: 2em;
+    justify-content: center;
+
+    img {
+        object-fit: contain;
+    }
+}

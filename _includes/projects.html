@@ -4,6 +4,7 @@
         <div class="projects-scroll-list">
             <ul>
             {% for project in site.projects %}
+                <a href="{{ project.url }}">
                 <li>
                     <table>
                         <tr>
@@ -14,7 +15,7 @@
                             <td>
                                 <h2>{{ project.title }} </h2> 
                                 <p class="subtext">{{ project.release }}</p>
-                                <p>{{ project.content }}</p>
+                                <p>{{ project.description }}</p>
                                 <p>
                                     {% if project.itch %}
                                         <a href="{{ project.itch }}">Itch.io</a>
@@ -33,6 +34,7 @@
                     <p>Positions: {{ project.positions }}</p>
                     {% endif %}
                 </li>
+                </a>
             {% endfor %}
             </ul>
         </div>
