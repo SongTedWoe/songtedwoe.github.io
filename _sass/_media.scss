@@ -74,4 +74,16 @@
             text-wrap: wrap;
         }
     }
+
+    .po-screenshots {
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .projects-scroll-list{
+        img {
+            max-width: 50vw;
+        }
+    }
 }
